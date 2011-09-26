@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="styles/jquery-ui.css" />
+		<link rel="stylesheet" type="text/css" href="styles/base.css?201109261720" />
+		<link rel="stylesheet" type="text/css" href="styles/time.css" />
+		<link rel="stylesheet" type="text/css" href="styles/space.css" />
+		<title>Extramuros</title>
+	</head>
+	<body>
+		<div class="page">
+			<h1><img src="media/extramuros.png" alt="Extramuros" /></h1>
+			<br /><br />
+			<div class="rel x1">
+				<div class="pad t2">
+					Search for artifacts
+				</div>
+			</div>
+			<ul id="filters"></ul>
+			<div id="addFilters">
+				<div class="pad">					
+					<a class="filterIcon filterIconTag" href="." onclick="XM.filter.add('tag');return false"></a>
+					<a class="filterIcon filterIconTime" href="." onclick="XM.filter.add('time');return false"></a>
+					<a class="filterIcon filterIconSpace" href="." onclick="XM.filter.add('space');return false"></a>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div id="results">
+				<div class="summary rel x1">
+					<div class="pad t2"></div>
+				</div>
+				<div class="items"></div>
+			</div>
+		</div>
+
+
+
+
+		<!--  Foundation  -->
+
+		<script src="scripts/jquery.js"></script>
+		<script src="scripts/jquery-ui.js"></script>
+		<script src="scripts/processing.js"></script>
+		<script src="scripts/skip.js"></script>
+
+
+		<!--  ExtraMuros  -->
+
+		<script src="scripts/xm-base.js?201109262035"></script>
+		<script src="scripts/xm-tag.js"></script>
+		<script src="scripts/xm-time.js"></script>
+		<script src="scripts/xm-space.js"></script>
+	</body>
+</html>
